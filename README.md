@@ -1,7 +1,7 @@
 # Test Weelo
 
-[Url preview](https://nostalgic-hodgkin-1715bb.netlify.app/).
-[Url XD mockups](https://xd.adobe.com/view/2cf95b50-decc-453c-b9e2-c4568af33d8f-79aa/).
+[Url preview maquetación](https://nostalgic-hodgkin-1715bb.netlify.app/).  
+[Url XD mockups](https://xd.adobe.com/view/2cf95b50-decc-453c-b9e2-c4568af33d8f-79aa/).  
 
 ### `npm start`
 
