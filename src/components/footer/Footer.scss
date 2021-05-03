@@ -1,0 +1,43 @@
+@import '../../assets/scss/config/index';
+
+.footer {
+   padding: 2.5rem 0 1rem;
+   background: color(gradient, base);
+
+   @include e(logo) {
+      width: 140px;
+   }
+
+   @include e(social) {
+      display: flex;
+      margin: 1rem 0;
+      img {
+         width: 26px;
+         &:hover { opacity: .86;}
+      }
+   }
+
+   @include e(copyright) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-icons {
+         img { width: 90px; }
+      }
+      &-links {
+         a {
+            color: color(grayscale, white);
+            margin-right: 18px;
+            text-decoration: underline;
+            text-underline-position: under;
+            &:hover {
+               opacity: .8;
+            }
+         }
+      }
+   }
+
+   hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.35);
+   }
+}

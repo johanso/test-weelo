@@ -1,0 +1,18 @@
+
+*, 
+*:before, *:after {
+	box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-brand;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: color(grayscale, text)
+}

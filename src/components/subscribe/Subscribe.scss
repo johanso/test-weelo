@@ -1,0 +1,22 @@
+@import '../../assets/scss/config/index';
+
+.subscribe {
+   padding: 3.5rem 0;
+   background: color(complementary, base) 
+               url(../../assets//images/subscribe-bg.png) no-repeat scroll center center / 80%;
+
+   @include e(form) {
+      width: 60%;
+      margin: 2rem auto 0;
+      .form-control {
+         margin-bottom: .8rem;
+         padding: .35rem 1rem;
+         border-color: #E0E0E0;
+         height: 45px;
+         &::placeholder {
+            color: color(grayscale, gray);
+            font-size: .9rem;
+         }
+      }
+   }
+}

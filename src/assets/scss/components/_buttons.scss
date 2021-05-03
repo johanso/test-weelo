@@ -1,0 +1,24 @@
+.button {
+   background-color: color( accent, base );
+   color: color( grayscale, white );
+   font-family: $font-family-brand;
+   font-size: $font-size;
+   padding: ( $font-size - .5rem ) ( $font-size + .9rem);
+   &:hover {
+      color: color( grayscale, white );
+      background-color: color( accent, light );
+   }
+
+   &.button-rounded {
+      border-radius: 2.1rem;
+   }
+
+   &.button-feature {
+      width: 100%;
+      border-radius: 2.1rem;
+      padding: .8rem;
+      font-weight: 600;
+      box-shadow: 0 6px 14px rgba(color( accent, light ), 0.35);
+   }
+
+}

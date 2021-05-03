@@ -1,0 +1,16 @@
+.header-section {
+   text-align: center;
+   @include e(title) {
+      color: color(accent, base);
+      font-weight: 800;
+      font-size: 1.7rem;
+      letter-spacing: -1px;
+      span {
+         color: color(primary, base);
+         font-weight: $font-bold;
+      }
+   }
+   @include e(subtitle) {
+      color: color(grayscale, gray);
+   }
+}

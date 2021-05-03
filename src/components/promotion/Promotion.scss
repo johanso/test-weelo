@@ -1,0 +1,36 @@
+@import '../../assets/scss/config/index';
+
+.promotion {
+   background: rgba(0, 0, 0, 0) url('../../assets/images/bg-promotion.jpg') no-repeat fixed center center / cover;
+   font-family: $font-family-brand;
+   padding: 4.5rem 0;
+   position: relative;
+   z-index: 0;
+   &::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: color(primary, dark);
+      opacity: 0.92;
+      z-index: -1;
+   }
+   @include e(title) {
+      font-weight: $font-bold;
+   }
+   @include e(subtitle) {
+      font-size: .85rem;
+      margin-top: 1.2rem;
+   }
+   @include e(buttons) {
+      margin-top: 1.2rem;
+      img {
+         max-width: 190px;
+      }
+   }
+   @include e(note) {
+      @extend .promotion__subtitle;
+   }
+}

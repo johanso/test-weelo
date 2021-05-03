@@ -1,0 +1,28 @@
+@import '../../assets/scss/config/index';
+
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   z-index: 999;
+   transition: .3s;
+   background: transparent;
+   @include e(navbar) {
+      .navbar-nav {
+         margin-right: 10rem;
+         .nav-link {
+            color: color( grayscale, white );
+         }
+      }
+   }
+   @include e(logo) {
+      width: 110px;
+   }
+   .container {
+      border-bottom: 1px solid rgba(191, 191, 191, 0.20);
+      padding: 0.4rem 0 1rem;
+   }
+}

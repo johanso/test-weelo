@@ -1,0 +1,12 @@
+// import bootstrap stylesheet
+@import "~bootstrap/scss/bootstrap";
+@import 'font-awesome/css/font-awesome.min.css';
+
+// Configuration
+@import './config/index';
+
+// Components
+@import './components/buttons';
+@import './components/header-title';
+
+ 

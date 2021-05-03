@@ -1,0 +1,42 @@
+// ==========================================================================
+// FontStack
+// ==========================================================================
+
+$font-size            : 1rem;
+$font-family-brand    : 'NeuzeitGro', sans-serif;
+$font-normal          : normal;
+$font-light           : 100;
+$font-bold            : 700;
+$font-balck           : 800;
+
+
+// ==========================================================================
+// Definitions color
+// ==========================================================================
+
+$colors: (
+   primary: (
+      base     : #3721A5,
+      light    : lighten(#3721A5, 5%),
+      dark     : darken(#3721A5, 5%)
+   ),
+   accent: (
+      base     : #00C570,
+      light    : lighten(#00C570, 5%),
+      dark     : darken(#00C570, 5%)
+   ),
+   complementary: (
+      base     : #EFECFB,
+      light    : lighten(#EFECFB, 5%),
+      dark     : darken(#EFECFB, 5%)
+   ),
+   grayscale: (
+      white    : #FFFFFF,
+      text     : #6D6D6D, 
+      gray     : #B3B3B3,
+      black    : #1E1E1E 
+   ),
+   gradient: (
+      base: linear-gradient(80deg, #5a41e6 12%, #140064 50%)
+   )
+);
