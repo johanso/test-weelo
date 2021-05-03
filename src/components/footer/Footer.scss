@@ -6,6 +6,9 @@
 
    @include e(logo) {
       width: 140px;
+      @include mq-max(sm) {
+         width: 120px;
+      }
    }
 
    @include e(social) {
@@ -19,7 +22,20 @@
 
    @include e(copyright) {
       font-size: .87rem;
-      &-icons { img { width: 100px; } }
+      &-icons { 
+         text-align: right;
+         img { width: 100px; } 
+         @include mq-max(md) {
+            text-align: center;
+            margin-bottom: 1rem;
+         }
+      }
+      &-links {
+         @include mq-max(md) {
+            text-align: center;
+            margin-bottom: 1rem;
+         }
+      }
    }
 
    hr {

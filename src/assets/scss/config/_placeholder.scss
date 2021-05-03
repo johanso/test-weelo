@@ -6,4 +6,8 @@
    height: 60px;
    display: flex;
    align-items: center;
+   @include mq-max(md) {
+      width: 26px;
+      height: 50px;
+   }
 }

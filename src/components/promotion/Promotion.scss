@@ -2,6 +2,7 @@
 
 .promotion {
    background: rgba(0, 0, 0, 0) url('../../assets/images/bg-promotion.jpg') no-repeat fixed center center / cover;
+   box-shadow: inset 0px 10px 12px 11px rgba(0, 0, 0, 0.5);
    font-family: $font-family-brand;
    padding: 4.5rem 0;
    position: relative;
@@ -19,6 +20,9 @@
    }
    @include e(title) {
       font-weight: $font-bold;
+      @include mq-max(md) {
+         font-size: 1.8rem;
+      }
    }
    @include e(subtitle) {
       font-size: .85rem;
@@ -28,6 +32,12 @@
       margin-top: 1rem;
       img {
          max-width: 220px;
+         @include mq-max(md) {
+            width: 160px;
+         }
+         @include mq-max(sm) {
+            width: 126px;
+         }
       }
    }
    @include e(note) {

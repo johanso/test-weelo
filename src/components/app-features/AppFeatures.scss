@@ -6,9 +6,16 @@
    @include e(inner) {
       position: relative;
       padding-top: 20px;
+      @include mq-max(lg) {
+         padding-top: 0;
+      }
    }
    @include e(list) {
       padding: 1.5rem 0;
+      @include mq-max(md) {
+         padding: 0;
+         margin-bottom: 0;
+      }
       &.right{
          text-align: left;
          [class*="items"] {
@@ -16,6 +23,9 @@
             &::after {
                @extend %icon-check;
                left: 0;
+            }
+            @include mq-max(md) {
+               padding-left: 40px;
             }
          }
       }
@@ -26,7 +36,16 @@
             &::after {
                @extend %icon-check;
                right: 0;
+               @include mq-max(md) {
+                  left: 0;
+               }
             }
+            @include mq-max(md) {
+               padding-left: 40px;
+            }
+         }
+         @include mq-max(md) {
+            text-align: left;
          }
       }
    }
@@ -37,8 +56,15 @@
       border-bottom: 1px solid #e8e8e8;
       list-style: none;
       position: relative;
+      @include mq-max(md) {
+         font-size: 1rem;
+         padding: .65rem 0;
+      }
    }
    @include e(image) {
       padding: 0 2.5rem;
+      @include mq-max(lg) {
+         display: none;
+      }
    }
 }

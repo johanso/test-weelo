@@ -4,6 +4,10 @@
       color: color(accent, base);
       font-weight: 800;
       font-size: 1.7rem;
+      @include mq-max(sm) {
+         display: flex;
+         flex-direction: column;
+      }
       span {
          color: color(primary, base);
          font-weight: $font-bold;

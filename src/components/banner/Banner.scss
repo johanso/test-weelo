@@ -2,12 +2,18 @@
 
 .banner {
    font-family: $font-family-brand;
-   height: 800px;
+   height: 750px;
    padding-bottom: 2.2rem;
    position: relative;
    overflow: hidden;
    z-index: 1;
    background: url(../../assets/images/bg-5.svg) no-repeat left top / cover;
+   @include mq-max(lg) {
+      height: 600px;
+   }
+   @include mq-max(md) {
+      height: auto;
+   }
    @include e(shape) {
       position: absolute;
       height: 220%;
@@ -17,36 +23,75 @@
       background: color(gradient, base);
       bottom: 0;
       right: 0;
-      transform: translate(23%, -27%) rotate(-35deg);
+      transform: translate(27%, -23%) rotate(-35deg);
       z-index: 0;
+      @include mq-max(xl) {
+         transform: translate(15%, -15%) rotate(-35deg)
+      }
+      @include mq-max(lg) {
+         display: none;
+      }
    }
    @include e(intro) {
       background: url(../../assets/images/Shape_triangle.svg) no-repeat 0;
       background-size: cover;
+      @include mq-max(lg) {
+         background: none;
+      }
+      @include mq-max(md) {
+         margin-top: 2rem;
+      }
    }
    @include e(thumb) {
       max-width: 360px;
-      padding-top: 7.5rem;
+      padding-top: 5rem;
+      @include mq-max(lg) {
+         padding-top: 0;
+         height: 500px;
+         margin: auto;
+      }
+      @include mq-max(md) {
+         padding-top: 2.5rem;
+         height: 400px;
+      }
    }
    @include e(title) {
       color: color(primary, base);
       font-size: 2.1rem;
-      line-height: 1.35;
+      line-height: 1.3;
+      @include mq-max(lg) {
+         font-size: 1.9rem;
+      }
+      @include mq-max(md) {
+         font-size: 1.8rem;
+         margin-bottom: 1.8rem;
+         line-height: 1.25;
+         text-align: center;
+      }
       strong {
          font-weight: $font-balck;
          font-size: 2.55rem;
+         @include mq-max(md) {
+            font-size: 2.3rem;
+         }
       }
       .actual-price {
          color: color(accent, base);
          font-weight: $font-balck;
          font-size: 2.8rem;
          line-height: 0;
+         @include mq-max(md) {
+            font-size: 2.3rem;
+         }
       }
       .old-price {
          color: color(grayscale, gray);
          font-weight: $font-light;
          text-decoration: line-through;
          font-size: 1.8rem;
+         @include mq-max(md) {
+            font-size: 1.5rem;
+         }
       }
    }
    @include e(subtitle) {
@@ -54,9 +99,15 @@
       color: color(grayscale, text);
       font-size: 1.4rem;
       margin-bottom: 1rem;
+      @include mq-max(md) {
+         text-align: center;
+      }
    }
    @include e(form) {
       padding-right: 4.2rem;
+      @include mq-max(lg) {
+         padding-right: 0;
+      }
       .form-control {
          margin-bottom: .8rem;
          padding: .35rem 1rem;
