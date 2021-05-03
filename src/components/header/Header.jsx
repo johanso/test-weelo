@@ -25,14 +25,14 @@ const Header = () => {
                <Navbar.Collapse id="navBarControls">
                   <Nav className="header__menu">
                      <NavDropdown title="Our services" className="mr-3 text-white">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Item href="#!">Tenant screening</NavDropdown.Item>
+                        <NavDropdown.Item href="#!">Correct rent online</NavDropdown.Item>
+                        <NavDropdown.Item href="#!">Pay rent online</NavDropdown.Item>
                      </NavDropdown>
-                     <Nav.Link href="#link">About</Nav.Link>
+                     <Nav.Link href="#!">About</Nav.Link>
                   </Nav>
                   <div className="header__user d-flex">
-                     <Nav.Link href="#link" className="text-white px-0">Sign In</Nav.Link>
+                     <Nav.Link href="#!" className="text-white px-0">Sign In</Nav.Link>
                      <Button className="button button-rounded d-none d-md-block ml-4" variant="none" type="button">
                         Get the App <i className="fa fa-cloud-download small" aria-hidden="true"></i>
                      </Button>
