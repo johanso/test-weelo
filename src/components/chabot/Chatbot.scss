@@ -1,0 +1,72 @@
+@import '../../assets/scss/config/index';
+
+.float-chatbot {
+   background: color(grayscale, white);
+   height: 65px;
+   position: fixed;
+   cursor: pointer;
+   right: 0;
+   z-index: 100;
+   bottom: 40px;
+   border-radius: 2.5rem 0 0 2.5rem;
+   width: 75px;
+   padding: .4rem;
+   box-shadow: -3px 1px 4px rgba(0, 0, 0, 0.16);
+}
+
+.chatbot {
+   height: 50px;
+   width: 75px;
+   animation: up-down 7.5s infinite ease-in-out;
+   position: fixed;
+   z-index: 100;
+
+   @include e(message) {
+      @extend %centered;
+      width: 50px;
+      height: 33px;
+      border: 4px solid color(primary, base);
+      border-radius: 5rem;
+   }
+   @include e(corner) {
+      @extend %centered;
+      top: 29px;
+      left: -39px;
+      width: 0;
+      height: 0;
+      border-left: 2px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 9px solid color(primary, base);
+      transform: rotate(140deg);
+   }
+   @include e(dot) {
+      height: 6.5px;
+      width: 6.5px;
+      left: -25px;
+      @extend %centered;
+      background-color: color(primary, base);
+      border-radius: 50%;
+      animation: pulse-outer 7.5s infinite ease-in-out;
+      &:nth-child(2) {
+         left: 0;
+         animation: pulse-inner 7.5s infinite ease-in-out;
+         animation-delay: 0.2s;
+      }
+      &:nth-child(3) {
+         left: 25px;
+         animation: pulse-outer 7.5s infinite ease-in-out;
+         animation-delay: 0.4s;
+      }
+   }
+   @keyframes up-down {
+      0% { transform: translate(0); }
+      12.5% { transform: translate(0, 2%); }
+      25% { transform: translate(0);  }
+      37.5% { transform: translate(0, 2%); }
+      50% { transform: translate(0); }
+      62.5% { transform: translate(0, 2%); }
+      75% { transform: translate(0); }
+      87.5% { transform: translate(0, 2%); }
+      100% { transform: translate(0); }
+   }
+}
