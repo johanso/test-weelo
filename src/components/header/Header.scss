@@ -12,7 +12,7 @@
    background: transparent;
    @include e(navbar) {
       .navbar-nav {
-         margin-right: 10rem;
+         margin-right: 9rem;
          .nav-link {
             color: color( grayscale, white );
          }

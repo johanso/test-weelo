@@ -35,17 +35,27 @@ const Footer = () => {
             <hr />
 
             <div className="footer__copyright">
-               <div className="footer__copyright-links">
-                  <Link to="/">Terms of use</Link>
-                  <Link to="/">Privacy policy</Link>
+
+               <div className="row align-items-center">
+                  <div className="col-md-4">
+                     <div className="footer__copyright-links">
+                        <Link className="text-link mr-3" to="/">Terms of use</Link>
+                        <Link className="text-link" to="/">Privacy policy</Link>
+                     </div>
+                  </div>
+                  <div className="col-md-4">
+                     <div className="text-white text-center">
+                        <p className="m-0"> © Copyrights 2021 Weelo | All rights reserved. </p>
+                     </div>
+                  </div>
+                  <div className="col-md-4">
+                     <div className="footer__copyright-icons text-right">
+                        <Link className="text-link" to="/"><img src={gplay} className="mx-2" alt="google play"/></Link>
+                        <Link className="text-link" to="/"><img src={appStore} className="mx-2" alt="App Store"/></Link>
+                     </div>
+                  </div>
                </div>
-               <div className="text-white">
-                  <small> © Copyrights 2021 Weelo | All rights reserved. </small>
-               </div>
-               <div className="footer__copyright-icons">
-                  <Link to="/"><img src={gplay} className="mx-2" alt="google play"/></Link>
-                  <Link to="/"><img src={appStore} className="mx-2" alt="App Store"/></Link>
-               </div>
+
             </div>
          </div>
       </footer>

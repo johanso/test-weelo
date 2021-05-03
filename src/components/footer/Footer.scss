@@ -18,23 +18,8 @@
    }
 
    @include e(copyright) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      &-icons {
-         img { width: 90px; }
-      }
-      &-links {
-         a {
-            color: color(grayscale, white);
-            margin-right: 18px;
-            text-decoration: underline;
-            text-underline-position: under;
-            &:hover {
-               opacity: .8;
-            }
-         }
-      }
+      font-size: .87rem;
+      &-icons { img { width: 100px; } }
    }
 
    hr {

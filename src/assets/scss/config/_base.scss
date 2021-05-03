@@ -16,3 +16,12 @@ body {
   height: 100%;
   color: color(grayscale, text)
 }
+.text-link {
+   color: color(grayscale, white);
+   text-decoration: underline;
+   text-underline-position: under;
+   &:hover {
+      color: color(grayscale, white);
+      opacity: .8;
+   }
+}

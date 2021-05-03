@@ -22,12 +22,12 @@
    }
    @include e(subtitle) {
       font-size: .85rem;
-      margin-top: 1.2rem;
+      margin-top: 1rem;
    }
    @include e(buttons) {
-      margin-top: 1.2rem;
+      margin-top: 1rem;
       img {
-         max-width: 190px;
+         max-width: 220px;
       }
    }
    @include e(note) {
